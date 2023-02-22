@@ -1,9 +1,13 @@
-#include <stdio.h>
-/** main - print pitchar_
- * Return : always return 0
+#include <unistd.h>
+
+/**
+ * _putchar - writes the characterc to stdout
+ * @c: The character is to print
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-int main()
+
+int -putchar(char c)
 {
-	printf("putchar_\n");
-	return (0);
+	return (write(1, &c, 1));
 }
