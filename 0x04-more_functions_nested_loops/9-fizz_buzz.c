@@ -1,37 +1,37 @@
-
 #include <stdio.h>
-
 /**
- * main - prints a fizz bug program
- * Return: Always 0
+ * main - Entry point
+ * Description: a program that prints the numbers from 1 to 100
+ * Return: void
  */
-
 int main(void)
 {
-	int x;
+	int i = 1;
 
-	for (x = 1; x <= 100; x++)
+	while (i <= 100)
 	{
-		if ((x % 3 = 0) && (x % 5 == 0))
+		if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz");
 		}
-		else if (x % 3 == 0)
+		else if (i % 3 == 0)
 		{
 			printf("Fizz");
 		}
-		else if (x % 5 == 0)
+		else if (i % 5 == 0)
 		{
 			printf("Buzz");
 		}
 		else
 		{
-			printf("%d", x);
+			printf("%d", i);
 		}
-		if (x != 100)
+		if (i != 100)
 		{
-			printf(" ");
+			putchar(32);
 		}
+		i++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
+}
