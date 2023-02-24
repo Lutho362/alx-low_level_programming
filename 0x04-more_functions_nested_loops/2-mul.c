@@ -1,13 +1,12 @@
 #include "main.h"
-/*
- * mul - multiplies two numbers
+/**
+ * mul - Entry point
  * Description - a function that multiplies two integers
- * @x: first nummber
- * @y: second number
- * Return: The resultof multiplication
+ * @a: Integer
+ * @b: Integer
+ * Return: int
  */
-
-int mul(int x, int y)
+int mul(int a, int b)
 {
-	return (x * y);
+	return (a * b);
 }
